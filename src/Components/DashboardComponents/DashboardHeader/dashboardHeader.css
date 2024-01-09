@@ -1,0 +1,273 @@
+.dasboardpage {
+    width: 100%;
+    height: 100vh;
+    background: url(../../../images/bg.png) top center no-repeat;
+    background-size: 100% 100%;
+}
+
+.notifyimg {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 63px;
+    padding: 15px 15px 15px 90px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header .leftpart {
+    width: 225px;
+}
+
+header .leftpart form {
+    width: 100%;
+}
+
+header .leftpart form input {
+    width: 100%;
+    border-radius: 400px;
+    border: 1px solid rgba(218, 218, 218);
+    padding: 7px 10px 7px 28px;
+    outline: none;
+    -webkit-appearance: none;
+    background: url(../../../images/icon12.svg) top 14px left 10px no-repeat;
+}
+
+header .rightpart {
+    display: flex;
+    align-items: center;
+}
+
+.languaselist {
+    margin-right: 10px;
+    position: relative;
+    z-index:9;
+}
+
+.languaselist>button {
+    
+    outline: none;
+    box-shadow: none;
+    color: #EA6A12;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.325px;
+    display: inline-block;
+    margin-left: 8px;
+    border-radius: 563.025px;
+    border: 1px solid #EA6A12;
+    background: #FFF;
+    padding: 10px 30px 10px 40px;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+}
+
+.languaselist>button::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    width: 10px;
+    height: 10px ;
+    border-width:0 0 10px 10px;
+    border-style: solid;
+    border-color:transparent transparent #EA6A12   transparent  ;
+    transform: rotate(45deg);
+}
+
+.languaselist>.globeimg {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    z-index: 2;
+}
+
+.languaselist > ul {
+    /* box-shadow: 0 0 4px #393939; */
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    border-radius: 10px;
+    background: #FFF;
+    overflow: hidden;
+    margin: -25px 0 0 0;
+    border: 1px solid #EA6A12;
+    padding-top: 24px;
+}
+
+.languaselist > ul li {
+    color: #000;
+    padding: 10px 8px;
+    cursor: pointer;
+font-size: 13px;
+font-weight: 400;
+line-height: 1;
+letter-spacing: 0.26px;
+}
+.languaselist > ul li:hover{
+    color: #fff;
+    background-color: #EA6A12;
+}
+
+
+
+header .rightpart .user {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+}
+
+header .rightpart .user figure {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+header .rightpart .user .userinfo {
+    min-width: 50px;
+}
+
+header .rightpart .user figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+header .rightpart .user h3 {
+    color: #000;
+    font-size: 14px;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-style: normal;
+    margin: 0 0 2px;
+}
+
+header .rightpart .user p {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    margin: 0;
+}
+
+.dropdownopt {
+    position: relative;
+    margin: 12px 0 0 10px;
+}
+
+.dropdownopt>span {
+    width: 10px;
+    cursor: pointer;
+    height: 0px;
+    border-width: 8px 8px 0px 8px;
+    border-style: solid solid none solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.dropdownoptbox {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 102px;
+    border-radius: 2px;
+    background: #FFEEE7;
+    padding: 5px 10px;
+    z-index: 9999999;
+}
+
+.dropdownoptbox>button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+}
+
+
+.dropdownoptbox>button:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.dropdownoptbox>button img {
+    width: 18px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.dropdownoptbox>button:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.fullsidebar header {
+    padding-left: 275px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/********** Aracic css ***********/
+
+.arabic header {
+    padding: 15px 90px 15px 15px;
+}
+
+.arabic .languaselist {
+margin-right: 0;
+margin-left: 10px;
+}
+
+.arabic header .rightpart .user {
+    margin-right: 15px;
+    margin-left: 0px;
+    width: auto;
+    min-width: 122px;
+}
+
+.arabic header .rightpart .user figure {
+    margin: 0 0 0 10px;
+}
+
+.arabic .dropdownoptbox {
+    left: 0;
+    right: auto;
+}
+
+.arabic .dropdownoptbox>button img {
+    margin-right: 0px;
+    margin-left: 5px;
+    transform: rotate(-180deg);
+}
+
+.arabic header .rightpart>button.me-3 {
+    margin-right: 0 !important;
+    margin-left: 10px;
+}
+
+.arabic .dropdownopt {
+    margin: 12px 10px 0 0px;
+}
+
+
+@media (max-width: 767px) {
+    .fullsidebar header {
+        padding-left: 90px;
+    }
+
+}

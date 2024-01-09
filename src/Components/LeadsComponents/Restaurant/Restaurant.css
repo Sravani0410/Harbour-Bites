@@ -1,0 +1,172 @@
+.leadpage > .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.leadpage h2 {
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 0px;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+}
+
+.leadpage .btn2 {
+  border-radius: 100px;
+  font-size: 16px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  outline: none;
+  transition: all 0.3s;
+  padding: 10px 15px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.leadpage .btn2:hover svg {
+  fill: #ea6a12;
+}
+
+.leadpopup .popuptitle,
+.onboardingpopup .popuptitle {
+  margin-bottom: 20px;
+}
+
+.leadpopup .popuptitle {
+  font-size: 40px;
+  font-family: 'NeuzeitGro-Bol';
+  font-weight: bold;
+  color: #000;
+  line-height: 1;
+}
+
+.leadpopup .popupinnerbox {
+  max-width: 500px;
+  height: 90%;
+  max-height: 1100px;
+  position: static;
+  transform: none;
+
+}
+
+.leadpopup .popupinnerbox .popupbody {
+  margin: 0 -12px;
+}
+
+.leadpopup .popupinnerbox .popupbody .leadpopupforminner {
+  height: calc(100vh - 350px) ;
+  overflow: auto;
+}
+
+
+.onboardingpopup button[type=submit] {
+  padding: 8px 36px 6px;
+}
+
+.successpopup .innerpopup {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(17.920225143432617px);
+  border-radius: 19px;
+  text-align: center;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.successpopup .innerpopup h3 {
+  color: #000;
+  font-size: 40px;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.successpopup .innerpopup p {
+  color: #000;
+  font-size: 16px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+}
+
+.sharebtnbox {
+  border-radius: 100px;
+  border: 1px solid #ea6a12;
+  background: #fff;
+  /* overflow: hidden; */
+  margin: 0 0 25px;
+  position: relative;
+  padding: 0 0 0 65px;
+}
+
+.sharebtnbox > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 480.454px 0px 0px 480.454px;
+  background: #ea6a12;
+}
+
+.sharebtnbox input {
+  border: none;
+  outline: none;
+  width: calc(100% - 60px);
+  padding: 0 5px;
+}
+
+.sharebtnbox .copybtn,
+.sharebtnbox .sharebtn {
+  background: transparent;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
+
+.sharebtnbox .sharebtn {
+  margin-left: 10px;
+}
+
+.react-tel-input .form-control {
+  width: 100%;
+}
+
+.copybtnbox{
+  display: inline-block;
+  vertical-align:middle;
+  position: relative;
+}
+
+.copybtnbox .copytooltip { 
+  position: absolute;
+  bottom: 25px;
+  /* padding-bottom: 10px; */
+  left: -46px;
+  width: 100px;
+  font-size: 12px;
+  /* height: 50px; */
+  color: white;
+}
+
+.copybtnbox .copytooltip:after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-color:  #ea6a12  transparent transparent transparent !important;;
+  /* border-color: #6c757d transparent transparent transparent; */
+  border-width: 8px;
+  margin-left: -4px;
+}
+
+.sharebtn{
+  display: inline-block;
+}
+
+

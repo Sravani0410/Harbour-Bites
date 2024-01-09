@@ -1,0 +1,124 @@
+
+.restaurantdetailpage {
+    position: relative;
+    z-index: 1;
+}
+
+.editprofileform {
+    position: relative;
+    z-index: 9;
+   
+}
+ .burgerimg{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.numbersdds .react-tel-input .flag-dropdown {
+    z-index: -1;
+}
+
+.editprofilebanner {
+    position: relative;
+}
+
+.editprofilebanner {
+    position: relative;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+.editprofilebanner>.info {
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(11.975000381469727px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editprofilebanner  figure {
+    margin: 0 0;
+}
+
+.editprofilebanner .info button{
+    border-radius: 8px;
+    padding: 13px 15px;
+    font-size: 14px;
+}
+
+.editprofilebanner .info > img {
+    margin: -55px 0 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.editprofileform  .numbersdds{
+    cursor: not-allowed;
+background-color: #80808029; 
+padding-bottom: 10px;
+}
+.numbersdds input{
+    z-index: -1;
+ }
+
+.numbersdds .react-tel-input.input_filed .form-control  {
+    display: block;
+}
+
+.submitbox {
+    position: absolute;
+    top: -78px;
+    right: 0;
+    left: auto;
+    width: auto;
+}
+
+.hoverCopyed {
+    display: none !important; 
+}
+
+.copybtnbox:hover .hoverCopyed{ 
+        display: block !important; 
+}
+.hoverCopyed button{
+    background-color: #ea6a12 !important;
+}
+
+
+
+.arabic  .submitbox .btn2.ms-3 {
+    margin-left: 0 !important;
+    margin-right: 1rem;
+}
+
+.arabic .submitbox {
+    right: auto;
+    left: 0;
+}
+
+.arabic .burgerimg {
+    right: auto;
+    z-index: 2;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.arabic .fullsidebar .navmenu li>a .text {
+    margin-left:0;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+

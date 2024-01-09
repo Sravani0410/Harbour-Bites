@@ -1,0 +1,775 @@
+/* /////////recorded category drag and drop//////////// */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* Adjust the number of columns as needed */
+  gap: 0.5rem;
+  /* Adjust the gap between items as needed */
+  width: 100%;
+}
+
+.recorded-cat-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dragCategory {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 99.111px;
+  height: 182.508px;
+  border-radius: 22.418px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24.780000686645508px);
+  cursor: move;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.dragCategory:hover {
+  background-color: rgba(234, 106, 18, 0.7);
+  color: white;
+}
+
+.ReorderCurese {
+  cursor: pointer;
+}
+
+.itemCategory {
+  text-align: center;
+  color: #000;
+  font-family: Neuzeit Grotesk;
+  font-size: 13.845px;
+  font-style: normal;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  /* line-height: 175%; */
+  /* 24.229px */
+  /* letter-spacing: 0.277px; */
+}
+
+.itemCategory:hover {
+  color: white;
+}
+
+.drag-catg-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.recorded-cat-head {
+  font-family: Neuzeit Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+  line-height: 130%;
+  /* 41.6px */
+  letter-spacing: 0.64px;
+  margin-bottom: 30px;
+}
+
+.button-arrow {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.item-indx {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  background-color: rgba(234, 106, 18, 0.36);
+  border-color: rgba(234, 106, 18, 0.36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* ////////category page///////////// */
+
+.sort-order {
+  margin-left: 10px;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+}
+
+.drag-active {
+  cursor: move;
+}
+
+.item-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.item-head > h2 {
+  font-size: 28px;
+  color: #000;
+  line-height: 1;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+  margin: 0;
+}
+
+.sort-item-order {
+  cursor: pointer;
+}
+
+.reorder-icon-div {
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+  margin-bottom: 17px;
+}
+
+.reorder-icon-div button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.reorder-icon-div .btn1 {
+  border: 1px solid #ea6a12;
+  background-color: #fff;
+  color: #ea6a12;
+  transition: all 0.3s ease;
+}
+
+.reorder-head {
+  font-family: "NeuzeitGro-Reg";
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.24px;
+  line-height: 1;
+}
+
+.categorypage > .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.categorypage > .title > h2 {
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 0px;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  line-height: 1;
+  border-radius: 100px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.categorypage > .title .btnbox button + button {
+  margin-left: 10px;
+}
+
+.btn1 {
+  border: 1px solid #ea6a12;
+  background-color: #fff;
+  color: #ea6a12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #ea6a12;
+  color: #fff;
+  border: 1px solid #ea6a12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn1 svg {
+  fill: #ea6a12;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover svg {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn2 {
+  border: 1px solid #ea6a12;
+  background-color: #ea6a12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn2 svg {
+  fill: #fff;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn2:hover {
+  border: 1px solid #ea6a12;
+  background-color: #fff;
+  color: #ea6a12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn2:hover svg {
+  fill: #ea6a12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn3 {
+  padding: 10px 35px;
+  border: 1px solid rgba(205, 205, 205, 0.8);
+  border-radius: 563.025px;
+  background: rgba(183, 183, 183, 0.8);
+  color: #fff;
+}
+
+.btn3:hover {
+  background: #fff;
+  color: rgba(205, 205, 205, 0.8);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.categorycontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit.btn2 {
+  padding: 10px 35px;
+}
+
+.categorycontent > .leftpart {
+  width: 68%;
+  padding-right: 15px;
+}
+
+.categorypage .topdishestabpart .nav-tabs .nav-link {
+  position: relative;
+}
+
+.categorypage .editinfobtnbox {
+  position: absolute;
+  width: 3px;
+  text-align: center;
+  z-index: 99;
+  top: 12px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.categorypage .editinfobtnbox > button > img {
+  display: block;
+}
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > button
+  > img {
+  width: 4px;
+}
+
+.categorypage .topdishestabpart nav {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+.categorypage .topdishestabpart nav > .nav > .swiper {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+.sadfs {
+  cursor: auto !important;
+}
+
+.curserer {
+  cursor: pointer !important;
+}
+.categorypage .topdishestabpart .nav-tabs .nav-link .editinfobtnbox > .btnbox {
+  position: absolute;
+  top: -44px;
+  right: 2px;
+  width: 70px;
+  height: auto;
+ 
+  background-color: #ffeee7;
+  border-radius: 4px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox:hover {
+  /* background-color: #ea6a1266 !important; */
+  transition: all 0.3s ease;
+}
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox
+  button ,
+  .categorypage .topdishestabpart .tab-content ul li > .title .editinfobtn > .btnbox button{
+  font-size: 11px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 2px 5px; 
+  min-height: 20px;
+  position: relative;
+  z-index: 33;
+}
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox
+  button:hover,
+  .categorypage .topdishestabpart .tab-content ul li > .title .editinfobtn > .btnbox button:hover{
+    background-color: rgba(234, 106, 18,0.4);
+  }
+
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox::after {
+  position: absolute;
+  content: "";
+  bottom: -22px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background: url(../../../images/arrowimg.svg) top center no-repeat;
+  transition: all 0.3s ease;
+}
+
+
+.categorycontent > .rightpart {
+  width: 32%;
+  padding-left: 15px;
+}
+
+.bestsellerpart {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(21px);
+}
+
+.bestsellerpart > h2 {
+  color: #000;
+  font-size: 28px;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0 0 30px;
+}
+
+.bestsellerpart > ul > li {
+  display: flex;
+  justify-content: space-between;
+  margin: 17px 0;
+  border-bottom: 0.5px solid #ea6a12;
+  padding: 0 5px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  background: transparent;
+}
+
+.bestsellerpart > ul > li:hover {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(234, 106, 18, 0.2) 100%
+  );
+}
+
+.bestsellerpart > ul > li > .leftpart {
+  width: 100px;
+  padding-right: 5px;
+}
+
+.bestsellerpart > ul > li > .leftpart > img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #000;
+}
+
+.bestsellerpart > ul > li > .rightpart {
+  width: calc(100% - 113px);
+}
+
+.bestsellerpart > ul > li > .rightpart h3 {
+  color: #000;
+  font-size: 16px;
+  font-family: "NeuzeitGro-Bol";
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.bestseller-veg-non-veg >img{
+  margin-top: -2px !important;
+}
+.bestsellerpart > ul > li > .rightpart p {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.bestsellerpart > ul > li > .rightpart .demooo12:hover {
+   display: none;
+}
+
+.bestsellerpart ul li p span {
+  cursor: pointer;
+}
+
+.bestsellerpart ul li p > span > b > div {
+  display: none;
+}
+
+.bestsellerpart ul li p > span > b:hover div {
+  display: block;
+}
+
+.bestsellerpart > ul > li > .rightpart .price {
+  color: #ea6a12;
+  font-size: 15px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.uploadbtn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.uploadbtn-wrapper > button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ea6a12;
+}
+
+.uploadbtn-wrapper:hover > button {
+  color: #fff;
+}
+
+.uploadbtn-wrapper input[type="file"] {
+  font-size: 100px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.addmenupopup .popupinnerbox {
+  max-width: 640px;
+  margin: auto 0;
+  transform: translate(-50%, 0%);
+  top: 50px;
+}
+
+.addmenupopup .popupinnerbox .popupbody {
+  margin: 40px -12px 0;
+}
+
+.addmenusubmitbtnbox {
+  text-align: right;
+}
+
+.sarbox,
+.caloriesbox {
+  position: relative;
+}
+
+.No-active h3 {
+  color: #000 !important;
+}
+
+.sarbox::after,
+.caloriesbox::after {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  height: calc(100% + 2px);
+  border-radius: 0px 12px 12px 0px;
+  background: #ffe8d8;
+  -webkit-backdrop-filter: blur(21px);
+  backdrop-filter: blur(21px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caloriesbox::after {
+  content: "kcal";
+  width: 47px;
+}
+
+.formbox .sarbox input.form-control {
+  padding-left: 5px;
+  padding-right: 58px;
+}
+
+.sarbox select {
+  border-radius: 0px 7px 7px 0px;
+  background: #ffe8d8;
+  -webkit-backdrop-filter: blur(21px);
+  backdrop-filter: blur(21px);
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+}
+
+.caloriesbox input.form-control {
+  padding-right: 50px;
+}
+
+.uploadwrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadwrapper button {
+  cursor: pointer;
+  border: 1px solid #d2d2d2;
+  background-color: #d2d2d2;
+  padding: 5px 15px;
+  color: #8d8d8d;
+  font-size: 24px;
+  border-radius: 12px;
+  font-family: "NeuzeitGro-Reg";
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.uploadwrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.addcategorypopup .popuptitle {
+  margin-bottom: 40px;
+}
+
+.addcategorypopup form {
+  position: relative;
+}
+
+.addcategorypopup form .categoryimg {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+.submitcategorybox {
+  text-align: right;
+}
+
+/* editmenupopup  */
+
+.editmenupopup .popupinnerbox {
+  max-width: 620px;
+  margin: auto;
+  transform: translate(-50%, 0%);
+  top: 50px;
+}
+
+.editmenupopup .popuptitle {
+  margin-bottom: 40px;
+}
+
+.editmenupopup .popupinnerbox .popupbody {
+  margin: 0 -12px;
+}
+
+.submiteditbox {
+  text-align: right;
+}
+
+/********* Arabic css  *********/
+
+.arabic .categorypage > .title .btnbox button + button {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.arabic .uploadbtn-wrapper {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.arabic .categorycontent > .leftpart {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.arabic .editinfobtn {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.arabic .bestsellerpart > ul > li > .leftpart {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+.arabic .item-indx {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.arabic .btn2 svg {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.arabic .categorypage .item-head {
+  margin-bottom: 10px;
+}
+
+.arabic .addmenupopup .popuptitle {
+  margin-bottom: 0;
+}
+
+.arabic .addmenusubmitbtnbox {
+  text-align: left;
+}
+
+.arabic .submitcategorybox,
+.arabic .submiteditbox {
+  text-align: left;
+}
+
+.arabic .addcategorypopup .popuptitle {
+  margin-bottom: 80px;
+}
+
+.arabic .categorypage .editinfobtnbox {
+  left: 8px;
+  right: auto;
+}
+
+.arabic
+  .categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox {
+  right: auto;
+  left: 1px;
+}
+
+.categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox::after {
+  left: 54px;
+  right: auto;
+  transform: rotateY(290deg);
+  bottom: auto;
+  top: 35px;
+}
+.arabic
+  .categorypage
+  .topdishestabpart
+  .nav-tabs
+  .nav-link
+  .editinfobtnbox
+  > .btnbox::after {
+  left: -12px;
+  right: auto;
+  transform: rotateY(135deg);
+  bottom: auto;
+  top: 36px;
+}
+
+@media (max-width: 767px) {
+  .btn1,
+  .btn2,
+  .btn3 {
+    font-size: 14px;
+  }
+}

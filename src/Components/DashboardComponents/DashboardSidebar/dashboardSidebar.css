@@ -1,0 +1,283 @@
+.dasboardbody {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(252, 237, 227, 0.30);
+}
+
+.sidebar {
+    width: 70px;
+    margin-top: -63px;
+    height: calc(100vh);
+    padding: 10px 4px;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.sidebar>.logo {
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E9ECEF;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.sidebar>.logo .fulllogo {
+    display: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+.navmenu li+li {
+    margin-top: 15px;
+}
+
+.navmenu li {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.navmenu li a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+.normalicon {
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+
+.navmenu li a .activeicon {
+    display: none;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+
+.navmenu li a:hover,
+.navmenu li a.active {
+    background-color: #EA6A12;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+
+
+
+.navmenu li a .text ,
+.navmenu li a:hover .normalicon,
+.navmenu li a.active .normalicon {
+    display: none;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+
+.navmenu li a:hover .activeicon,
+.navmenu li a.active .activeicon { 
+    display: inline-block;
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+}
+
+
+.dasboardbody .contentpart {
+    width: calc(100% - 70px);
+    height: calc(100vh - 63px);
+    overflow: auto;
+    padding: 20px 40px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/*************************** scrollbar css start ***************************/
+
+.dasboardbody .contentpart::-webkit-scrollbar,
+.addmenupopup .popupinnerbox .popupbody::-webkit-scrollbar,
+.editmenupopup .popupinnerbox .popupbody::-webkit-scrollbar,
+.leadpopup .popupinnerbox .popupbody .leadpopupforminner::-webkit-scrollbar   {
+    width: 5px;
+    background-color: #EF9456B2;
+    border-radius: 100px;
+}
+
+.dasboardbody .contentpart::-webkit-scrollbar-thumb,
+.addmenupopup .popupinnerbox .popupbody::-webkit-scrollbar-thumb,
+.editmenupopup .popupinnerbox .popupbody::-webkit-scrollbar-thumb ,
+.leadpopup .popupinnerbox .popupbody .leadpopupforminner::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #c65b13b2;
+    border-radius: 100px;
+}
+
+/*************************** scrollbar css end ***************************/
+
+
+/*************************** scrollbar css end ***************************/
+
+
+.fullsidebar .sidebar {
+    width: 260px;
+}
+
+.fullsidebar .sidebar>.logo .smalllogo {
+    display: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.fullsidebar .sidebar>.logo .fulllogo {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.fullsidebar .sidebar .navmenu li a {
+    width: auto;
+    text-align: left;
+    justify-content: flex-start;
+    min-width: 220px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+
+
+}
+
+.fullsidebar .navmenu li>a .text {
+    -webkit-transition: all.3s ease;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.fullsidebar .sidebar .navmenu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: .5px;
+    background-color: #d8d8d8;
+    display: block
+}
+
+.fullsidebar .sidebar .navmenu li a:hover,
+.fullsidebar .sidebar .navmenu li a.active {
+    background-color: #EA6A12;
+}
+
+.fullsidebar .sidebar .navmenu li>a .text {
+    color: #aaa;
+    font-size: 16px;
+    margin-left: 10px;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: baseline-middle;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.fullsidebar .sidebar .navmenu li a:hover .text,
+.fullsidebar .sidebar .navmenu li a.active .text {
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.fullsidebar .contentpart {
+    width: calc(100% - 260px);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+/**************** Arabic css ***********************/
+
+.arabic .fullsidebar .sidebar .navmenu li>a .text {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+
+
+/******************** Media css  **************************/
+
+@media (max-width:1199px) {
+    .fullsidebar .sidebar {
+        width: 240px;
+    }
+
+    .fullsidebar .contentpart {
+        width: calc(100% - 240px);
+    }
+
+    .dasboardbody .contentpart {
+        padding: 20px 15px 10px 10px;
+    }    
+}
+
+
+@media (max-width: 767px) { 
+    .fullsidebar .sidebar>.logo .fulllogo,
+    .fullsidebar .sidebar .navmenu li a:hover>.text, 
+    .fullsidebar .sidebar .navmenu li a.active>.text,
+    .fullsidebar .sidebar .navmenu li>a>.text,
+    .fullsidebar .sidebar .navmenu li a::after {
+        display: none;
+    }
+    .fullsidebar .sidebar>.logo .smalllogo {
+        display: block;
+        margin: 0 auto;
+    }
+    .fullsidebar .sidebar .navmenu li a {
+        min-width: auto;
+        width: 42px;
+        height: 42px;
+        padding: 5px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .fullsidebar .sidebar {
+        width: 70px;    
+    }
+    
+    .navmenu li+li {
+        margin-top: 10px;
+    }
+
+    .fullsidebar .contentpart {
+        width: calc(100% - 70px);
+    }
+
+}
+
+
+
+
+
+

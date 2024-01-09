@@ -1,0 +1,299 @@
+.loginpage {
+    background: url(../../images/signinbg.png) top center no-repeat;
+    background-size: 100% 100%;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-box {
+    padding: 35px;
+    max-width: 639px;
+    width: 90%;
+}
+
+.login-box .title {
+    text-align: center;
+}
+
+.login-box .title h2 {
+    color: #07143B;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'NeuzeitGro-Bol';
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+}
+
+.login-box .title p {
+    color: #3F3F3F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+
+
+.login-box form .formbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login-box form .formbox label {
+    color: #959895;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.login-box form .form-control {
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #EA6A12;
+    background: #FFF;
+}
+
+
+
+
+.imgsms {
+    position: absolute;
+    top: 21px;
+    left: 21px;
+}
+
+.imgcloseeye {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    cursor: pointer;
+}
+
+.imglock {
+    position: absolute;
+    top: 17px;
+    left: 21px;
+}
+
+.login-box form .btn {
+    display: block;
+    border: 1px solid #EA6A12;
+    background: #EA6A12;
+    padding: 8px 24px;
+    margin: 32px auto 0;
+    border: 1px solid #EA6A12;
+    border-radius: 44px;
+    width: 140px;
+    color: #fff;
+}
+
+.login-box form .text-danger {
+    margin-bottom: 0;
+}
+
+.agreetxt {
+    text-align: center;
+    color: #959895;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.alreadytext {
+    color: #07143B;
+    font-size: 16px;
+    font-family: 'NeuzeitGro-Reg';
+    font-weight: normal;
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.alreadytext span {
+    color: #EA6A12;
+    text-decoration: none;
+}
+
+.forgortext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgortext {
+    color: #3F3F3F;
+    font-size: 16px;
+
+}
+
+.forgortext span {
+    color: #EA6A12;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.forgortext span {
+    cursor: pointer;
+}
+
+
+.passwordbox {
+    position: relative;
+}
+
+.passwordbox input.form-control {
+    padding-right: 40px;
+
+}
+
+.passwordbox .password_eye {
+    position: absolute;
+    top: 8px;
+    right: 17px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.switchtogglebtn {}
+
+.switchtogglebtn .switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 27px;
+    margin: 0 5px;
+}
+
+.switchtogglebtn .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switchtogglebtn .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EA6A12;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switchtogglebtn .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switchtogglebtn input:checked+.slider {
+    /* background-color: #EA6A12; */
+}
+
+.switchtogglebtn input:focus+.slider {
+    box-shadow: 0 0 1px #EA6A12;
+}
+
+.switchtogglebtn input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switchtogglebtn .slider.round {
+    border-radius: 34px;
+}
+
+.switchtogglebtn .slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+.loginpage::-webkit-scrollbar,
+.login-box::-webkit-scrollbar {
+    width: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.loginpage::-webkit-scrollbar-thumb,
+.login-box::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(90.18deg, #8EC22C 2.36%, #379640 99.96%);
+}
+
+
+/************  Arabic css  ****************/
+
+
+.arabic .passwordbox input.form-control {
+    padding-left: 40px;
+    padding-right: 16px;
+}
+.arabic .passwordbox .password_eye {
+    right: auto;
+    left: 17px;
+}
+
+.arabic .login-box form .btn {
+    width: 156px;
+}
+
+
+
+
+
+@media(max-width:767px) {
+
+    .loginpage {
+        background: url(../../images/mobilebg.png) top center no-repeat;
+        background-size: 100% 100vh;
+        align-items: flex-end;
+        padding-bottom: 120px;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+}
+
+
+@media(max-width:580px) {
+    .forgortext {
+        display: block;
+    }
+
+
+
+
+}

@@ -1,0 +1,77 @@
+
+
+.otppage .loginpage {
+  background: url(../../images/signupbg.png) top center no-repeat;
+  background-size: 100% 100%;
+}
+
+.otpbox {
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+
+.otpbox .title h2 {
+  color: #07143B;
+  font-size: 40px;
+ font-family: 'NeuzeitGro-Bol';
+font-weight: normal;
+}
+
+.otpbox .title p {
+  color: #959895;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.otpbox .otp_container {
+  margin: 20px 0;
+}
+
+.otpbox .otp_container input {
+  width: 70px !important;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #EA6A12;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.otpbox .otp_container input:not(:last-child) {
+  margin-right: 10px;
+}
+
+.otpbox .otp_container > div {
+  justify-content: center;
+}
+
+.otpbox .otp_container > div > span {
+  display: none;
+}
+
+
+
+.email_number {
+  font-size: 16px;
+ font-family: 'NeuzeitGro-Reg';
+font-weight: normal;
+  color: #111;
+}
+
+.resendtext  {
+  font-size: 16px;
+ font-family: 'NeuzeitGro-Reg';
+font-weight: normal;
+  color: #111;
+  text-align: right;
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.resendtext span {
+  color: #EA6A12;
+
+}
+
+
